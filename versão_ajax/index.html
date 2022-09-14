@@ -5,31 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php
-        include "funcoesphp.php";
-
-    ?>
 </head>
 <body>
     <form method="post" id="formulario">
         <div>
             nome
-            <input type="text" name="nome">
+            <input type="text" name="nome" id="nome">
             <br>
             salario
             <input type="text" id="salario" name="salario">
             <br>
             endereço
-            <textarea name="endereco" cols="30" rows="10"></textarea>
+            <textarea name="endereco"  id="endereco" cols="30" rows="10"></textarea>
             <br>
-            <input type="submit" value="enviar" name="enviar" id="enviar">
+            <input type="button" value="enviar" name="enviar" id="enviar">
         </div>
         <div id="resultado">
-            <?php 
-                if(isset($_POST['enviar'])){
-                    mostraSalario();
-                }
-            ?>
+
         </div>
     </form>
 </body>
